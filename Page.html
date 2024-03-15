@@ -3,13 +3,15 @@
 <html>
 
 <head>
+    <div style="height: 50px;"></div>
     <title>实验二页面</title>
     <style>
         h1 {
             text-align: center;
-            color: blue;
+            color: aqua;
             font-family: 微软雅黑;
             font-weight: bold;
+            font-size: 35px;
         }
 
         #address {
@@ -18,17 +20,30 @@
             font-style: italic;
             color: crimson;
         }
+
+        #img-zone>img{
+            width: 640px;
+            height: 360px;
+            border: 2px dotted aqua;
+        }
     </style>
 </head>
 
-<body>
+<body style="background-image: url(img/background.jpeg); background-repeat: no-repeat; background-size:cover;">
     <h1>
-        欢迎来到实验二的页面！
+        欢迎来到<span style="color: greenyellow;">实验二</span>的页面！
     </h1>
-    <p id="text" style="text-align: center; font-size: 20px;">
+    <p id="text" style="text-align: center; font-size: 25px;">
         <span id="lead-text">本站的地址是：</span>   <!--文本的一部分用span标签-->
         <span id="address">https://QuincyZhang03.github.io</span>
     </p>
+
+    <div style="height: 60px;" ></div>  <!--分隔-->
+
+    <div id="img-zone" style="text-align: center;">
+        <img src="img/day.jpg" />
+        <img src="G:\Web Projects\GitWebpage\img\night.jpg" />
+    </div>
 </body>
 
 </html>
